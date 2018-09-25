@@ -85,13 +85,16 @@ public class MainActivity extends AppCompatActivity {
         if (scttl <= 60) {
 
             gpattl.setBackgroundColor(getColor(R.color.red));
+            getWindow().getDecorView().setBackgroundColor(getColor(R.color.red));
         }else if (scttl <= 61 || scttl <=79 ){
 
             gpattl.setBackgroundColor(getColor(R.color.yellow));
+            getWindow().getDecorView().setBackgroundColor(getColor(R.color.yellow));
 
         }else{
 
             gpattl.setBackgroundColor(getColor(R.color.green));
+            getWindow().getDecorView().setBackgroundColor(getColor(R.color.green));
         }
         calcbutton.setVisibility(View.INVISIBLE);
         gpaclearbutton.setVisibility(View.VISIBLE);
