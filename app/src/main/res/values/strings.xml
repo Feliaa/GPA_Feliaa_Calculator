@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GPA Feliaa Calculator</string>
+    <string name="calculate">Calculate</string>
+    <string name="clearText">clear</string>
+    <string name="score_5">SCORE #5</string>
+    <string name="score_4">SCORE #4</string>
+    <string name="score_3">SCORE #3</string>
+    <string name="score_2">SCORE #2</string>
+    <string name="score_1">SCORE #1</string>
+    <string name="gpafeildhint">Enter Grade</string>
+    <string name="blank"> </string>
+</resources>

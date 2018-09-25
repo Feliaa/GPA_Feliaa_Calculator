@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    >
+
+    <TextView
+        android:id="@+id/gpalbl5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_5"
+        app:layout_constraintRight_toLeftOf="@id/gpa5"
+        app:layout_constraintBottom_toBottomOf="@id/gpa5"
+        />
+
+    <TextView
+        android:id="@+id/gpalbl4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_4"
+        app:layout_constraintRight_toLeftOf="@id/gpa4"
+        app:layout_constraintBottom_toBottomOf="@id/gpa4"
+        />
+
+    <TextView
+        android:id="@+id/gpalbl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_3"
+        app:layout_constraintRight_toLeftOf="@id/gpa3"
+        app:layout_constraintBottom_toBottomOf="@id/gpa3"
+        />
+
+    <TextView
+        android:id="@+id/gpalbl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_2"
+        app:layout_constraintRight_toLeftOf="@id/gpa2"
+        app:layout_constraintBottom_toBottomOf="@id/gpa2"
+        />
+
+    <TextView
+        android:id="@+id/gpalbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score_1"
+        app:layout_constraintRight_toLeftOf="@id/gpa1"
+        app:layout_constraintBottom_toBottomOf="@id/gpa1"
+        />
+
+    <EditText
+        android:id="@+id/gpa5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="@id/gpa4"
+        app:layout_constraintRight_toRightOf="@id/gpa4"
+        app:layout_constraintTop_toBottomOf="@+id/gpa4"
+        android:autofillHints="@string/gpafeildhint"
+        />
+
+    <EditText
+        android:id="@+id/gpa4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/gpa3"
+        app:layout_constraintLeft_toLeftOf="@id/gpa3"
+        app:layout_constraintRight_toRightOf="@id/gpa3"
+        android:autofillHints="@string/gpafeildhint"
+        />
+
+    <EditText
+        android:id="@+id/gpa3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/gpa2"
+        app:layout_constraintLeft_toLeftOf="@id/gpa2"
+        app:layout_constraintRight_toRightOf="@id/gpa2"
+        android:autofillHints="@string/gpafeildhint"
+        />
+
+    <EditText
+        android:id="@+id/gpa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@id/gpa1"
+        app:layout_constraintRight_toRightOf="@id/gpa1"
+        app:layout_constraintTop_toBottomOf="@+id/gpa1"
+        android:autofillHints="@string/gpafeildhint"
+        />
+
+    <EditText
+        android:id="@+id/gpa1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        android:autofillHints="@string/gpafeildhint"
+        />
+
+    <TextView
+        android:id="@+id/gpadisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:text="@string/blank"
+        app:layout_constraintTop_toBottomOf="@+id/gpa5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/gpacalbutton"
+        />
+
+    <Button
+        android:id="@+id/gpacalbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/gpadisplay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="calcgpa"
+        />
+
+    <Button
+        android:id="@+id/cleartext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clearText"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gpadisplay"
+        android:onClick="gpaclanup"
+        />
+
+</android.support.constraint.ConstraintLayout>
